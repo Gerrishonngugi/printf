@@ -1,5 +1,6 @@
 #include "main.h"
 
+void print_num(int);
 /**
  * print_char - function to print character
  * @ap: variadic list
@@ -29,6 +30,12 @@ int print_string(va_list ap)
 	int i = 0;
 
 	s = va_arg(ap, char *);
+
+	if (s == NULL)
+	{
+		s = "(nil)";
+		return (0);
+	}
 	while (s[i] != '\0')
 	{
 		_putchar(s[i]);

@@ -67,6 +67,7 @@ int print_int(va_list ap)
 	{
 		_putchar('0');
 		count++;
+		return (count);
 	}
 	num2 = num;
 	if (num > 0)

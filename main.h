@@ -12,4 +12,5 @@ int print_char(va_list);
 int print_string(va_list);
 int print_int(va_list);
 void print_num(int);
+int print_bin(va_list);
 #endif

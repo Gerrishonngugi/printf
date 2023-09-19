@@ -33,8 +33,8 @@ int print_string(va_list ap)
 
 	if (s == NULL)
 	{
-		s = "(nil)";
-		return (0);
+		_printf("(null)");
+		return (6);
 	}
 	while (s[i] != '\0')
 	{

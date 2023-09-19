@@ -58,6 +58,8 @@ int conversionspecifier(char c, va_list ap)
 		return (print_string(ap));
 	if (c == 'd' || c == 'i')
 		return (print_int(ap));
+	if (c == 'b')
+		return (print_bin(ap));
 	return (0);
 }
 
